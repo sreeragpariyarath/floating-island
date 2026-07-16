@@ -3,14 +3,17 @@ import { Canvas } from "@react-three/fiber";
 import { ScrollControls } from "@react-three/drei";
 import { Temple } from "./Temple";
 import { PathCamera } from "./PathCamera";
+import { CloudLayer } from "./CloudLayer";
+import { IntroClouds } from "./IntroClouds";
 
 function App() {
   return (
     <Canvas camera={{ position: [16.4, 1, -7.8], fov: 50 }}>
-      <color attach="background" args={["#222"]} />
       <ScrollControls pages={6} damping={0.3}>
         <Suspense fallback={null}>
           <Temple />
+          <CloudLayer />
+          <IntroClouds />
         </Suspense>
         <PathCamera />
       </ScrollControls>

@@ -6,3 +6,21 @@ body,
   height: 100%;
   margin: 0;
 }
+
+/* Backdrop pulled from the model's palette: lava-red glow (left, behind the
+   moon), deep maroon midtones, near-black edge, faint teal echo (bottom right) */
+body {
+  background:
+    radial-gradient(ellipse 65% 55% at 22% 30%, rgba(198, 58, 32, 0.45), transparent 70%),
+    radial-gradient(ellipse 50% 45% at 85% 78%, rgba(64, 110, 104, 0.16), transparent 70%),
+    linear-gradient(115deg, #481219 0%, #250f18 50%, #100b12 100%);
+}
+
+/* Hide the ScrollControls scrollbar — scrolling still works via wheel/touch */
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+*::-webkit-scrollbar {
+  display: none;
+}

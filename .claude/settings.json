@@ -19,7 +19,17 @@
       "Bash(sed -i 's/\\\\[0, 0.15, 0.35, 0.55, 0.75, 1.0\\\\]/[0.25, 0.3, 0.35, 0.45, 0.9, 1.0]/' check-scroll.js)",
       "Bash(sed -i 's/\\\\[0.25, 0.3, 0.35, 0.45, 0.9, 1.0\\\\]/[0, 0.2, 0.45, 0.65, 0.85, 1.0]/' check-scroll.js)",
       "Bash(sed -i 's/\\\\[0, 0.2, 0.45, 0.65, 0.85, 1.0\\\\]/[0.2, 0.65, 1.0]/' check-scroll.js)",
-      "Bash(sed -i 's/\\\\[0.2, 0.65, 1.0\\\\]/[0.9, 1.0]/' check-scroll.js)"
+      "Bash(sed -i 's/\\\\[0.2, 0.65, 1.0\\\\]/[0.9, 1.0]/' check-scroll.js)",
+      "Bash(mkdir -p \"c:/Me/projects/temple/public/textures\")",
+      "Bash(NODE_PATH=\"/c/Users/psree/AppData/Local/npm-cache/_npx/e41f203b7505f1fb/node_modules\" node make-cloud-texture.js)",
+      "Bash(sed -i 's/\\\\[0, 0.5, 1.0\\\\]/[0, 0.3, 0.6, 1.0]/' check-scroll.js)",
+      "Bash(sed -i 's/\\\\[0, 0.3, 0.6, 1.0\\\\]/[0]/' check-scroll.js)",
+      "Bash(sed -i 's/\\\\[0\\\\]/[0.5, 1.0]/' check-scroll.js)",
+      "Bash(NODE_PATH=\"/c/Users/psree/AppData/Local/npm-cache/_npx/e41f203b7505f1fb/node_modules\" node check-intro.js)",
+      "Bash(sed -i 's/<Clouds material={THREE.MeshBasicMaterial} limit={400}>/<Clouds texture={TEX} material={THREE.MeshBasicMaterial} limit={400}>/; s/<Cloud texture={TEX} /<Cloud /g' src/CloudLayer.tsx)",
+      "Bash(npx tsc *)",
+      "Bash(sed -i 's/\\\\[1500, 2500, 3500, 4500, 6500\\\\]/[1500, 6500]/' check-intro.js)",
+      "Bash(sed -i 's/\\\\[0.5, 1.0\\\\]/[0.15]/' check-scroll.js)"
     ]
   }
 }
