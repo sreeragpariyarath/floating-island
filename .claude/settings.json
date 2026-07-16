@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls \"c:/Me/projects/temple/public\" 2>/dev/null; echo \"---models---\"; ls \"c:/Me/projects/temple/public/models\" 2>/dev/null; echo \"---downloads---\"; ls -la ~/Downloads 2>/dev/null | grep -i -E \"glb|gltf|fbx|usdz\" )",
+      "Read(//c/Users/psree/Downloads/**)",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Read(//tmp/**)",
+      "Skill(run)",
+      "Skill(run:*)",
+      "Bash(npx --no-install playwright screenshot --help)",
+      "Bash(npx --no-install playwright screenshot --wait-for-timeout 5000 http://localhost:5173/ \"C:/Users/psree/AppData/Local/Temp/claude/c--Me-projects-temple/b988f4c2-cf64-4885-a2a6-1badffb712dd/scratchpad/temple-render.png\")",
+      "Bash(NODE_PATH=\"/c/Users/psree/AppData/Local/npm-cache/_npx/e41f203b7505f1fb/node_modules\" node check2.js)",
+      "Bash(NODE_PATH=\"/c/Users/psree/AppData/Local/npm-cache/_npx/e41f203b7505f1fb/node_modules\" node check.js)",
+      "Bash(node scripts/fix-unlit-materials.cjs public/models/temple.original.glb public/models/temple.glb)",
+      "Bash(node -e ' *)",
+      "Bash(node scripts/extract-path.mjs)",
+      "Bash(NODE_PATH=\"/c/Users/psree/AppData/Local/npm-cache/_npx/e41f203b7505f1fb/node_modules\" node check-scroll.js)",
+      "Bash(sed -i 's/\\\\[0, 0.15, 0.35, 0.55, 0.75, 1.0\\\\]/[0.25, 0.3, 0.35, 0.45, 0.9, 1.0]/' check-scroll.js)",
+      "Bash(sed -i 's/\\\\[0.25, 0.3, 0.35, 0.45, 0.9, 1.0\\\\]/[0, 0.2, 0.45, 0.65, 0.85, 1.0]/' check-scroll.js)",
+      "Bash(sed -i 's/\\\\[0, 0.2, 0.45, 0.65, 0.85, 1.0\\\\]/[0.2, 0.65, 1.0]/' check-scroll.js)",
+      "Bash(sed -i 's/\\\\[0.2, 0.65, 1.0\\\\]/[0.9, 1.0]/' check-scroll.js)"
+    ]
+  }
+}
