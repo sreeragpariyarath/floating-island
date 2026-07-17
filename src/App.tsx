@@ -5,6 +5,7 @@ import { Temple } from "./Temple";
 import { PathCamera } from "./PathCamera";
 import { CloudLayer } from "./CloudLayer";
 import { IntroClouds } from "./IntroClouds";
+import { Crows } from "./Crows";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Temple />
           <CloudLayer />
           <IntroClouds />
+          <Crows />
         </Suspense>
         <PathCamera />
       </ScrollControls>
